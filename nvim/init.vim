@@ -1,4 +1,4 @@
-set clipboard=unnamed
+" " map space as leader key
 nnoremap <SPACE> <Nop>
 let mapleader=" "
 
@@ -16,6 +16,8 @@ nnoremap <leader>p "+P
 vnoremap <leader>p "+p
 vnoremap <leader>p "+P
 
+
+" " add small delets (d w) to numbered registers
 if exists("##TextYankPost")
   function! SmallDeleteRing(event) abort
     if a:event['operator'] == 'y'
