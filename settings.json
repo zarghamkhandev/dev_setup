@@ -1,0 +1,25 @@
+{
+  "update.channel": "none",
+  "update.mode": "manual",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "editor.cursorSurroundingLines": 20,
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.list.automaticKeyboardNavigation": false,
+  "workbench.colorCustomizations": {
+    "list.focusBackground": "#253CA1",
+    "list.activeSelectionBackground": "#253CA1",
+    "terminalCursor.foreground": "#fff01fc4",
+    "editorCursor.foreground": "#fff01fc4"
+  },
+  "git.confirmSync": false,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "javascript.suggest.includeCompletionsForImportStatements": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false
+  },
+  "typescript.suggest.autoImports": false,
+  "debug.javascript.autoAttachFilter": "disabled"
+}
+
