@@ -9,7 +9,8 @@
     "list.focusBackground": "#253CA1",
     "list.activeSelectionBackground": "#253CA1",
     "terminalCursor.foreground": "#fff01fc4",
-    "editorCursor.foreground": "#fff01fc4"
+    "editorCursor.foreground": "#fff01fc4",
+    "editorGroup.focusedEmptyBorder": "#de0833"
   },
   "git.confirmSync": false,
   "typescript.preferences.importModuleSpecifier": "relative",
@@ -40,10 +41,10 @@
       "key": "q",
       "name": "Close window",
       "type": "command",
-      "command": "workbench.action.closeEditorsAndGroup"
+	     "command": "workbench.action.closeEditorsInGroup"
     },
     {
-      "key": "w",
+      "key": "s",
       "name": "Save current file",
       "type": "command",
       "command": "workbench.action.files.save"
@@ -86,22 +87,42 @@
         }
       ]
     },
-    {
+  {
       "key": "g",
-      "name": "Show Git explorer",
-      "type": "conditional",
+      "name": "Git",
       "bindings": [
         {
-          "key": "",
-          "name": "default",
-          "type": "command",
-          "command": "workbench.view.scm"
+          "key": "k",
+          "name": "Previous Hunk",
+          "type": "comand",
+          "command": "workbench.action.editor.previousChange",
+          "when": "editorTextFocus && !textCompareEditorActive"
         },
         {
-          "key": "when:visible",
-          "name": "Hide explorer",
-          "type": "command",
-          "command": "workbench.action.toggleSidebarVisibility"
+          "key": "j",
+          "name": "Next Hunk",
+          "type": "comand",
+          "command": "workbench.action.editor.nextChange",
+          "when": "editorTextFocus && !textCompareEditorActive"
+        },
+        {
+          "key": "g",
+          "name": "Git",
+          "type": "conditional",
+          "bindings": [
+            {
+              "key": "",
+              "name": "default",
+              "type": "command",
+              "command": "workbench.view.scm"
+            },
+            {
+              "key": "when:visible",
+              "name": "Hide explorer",
+              "type": "command",
+              "command": "workbench.action.toggleSidebarVisibility"
+            }
+          ]
         }
       ]
     },
@@ -527,11 +548,24 @@
           "type": "command",
           "command": "workbench.action.toggleEditorWidths"
         },
-        {
+      {
           "key": "m",
-          "name": "Maximize editor group",
-          "type": "command",
-          "command": "workbench.action.minimizeOtherEditors"
+          "name": "Move Editor in Groups",
+          "type": "bindings",
+          "bindings": [
+            {
+              "key": "h",
+              "name": "Move to left group",
+              "type": "command",
+              "command": "workbench.action.moveEditorToPreviousGroup"
+            },
+            {
+              "key": "l",
+              "name": "Move to right group",
+              "type": "command",
+              "command": "workbench.action.moveEditorToNextGroup"
+            }
+          ]
         },
         {
           "key": "M",
