@@ -277,6 +277,14 @@
     "key": "cmd+w",
     "command": "-workbench.action.closeGroup",
     "when": "activeEditorGroupEmpty && multipleEditorGroups"
+  },
+   {
+    "key": "enter",
+    "when": "explorerViewletVisible && filesExplorerFocus",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": ["list.select", "workbench.action.toggleSidebarVisibility"]
+    }
   }
 ]
 
