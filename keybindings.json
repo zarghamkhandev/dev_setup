@@ -273,9 +273,9 @@
     "command": "-workbench.action.closeGroup",
     "when": "activeEditorGroupEmpty && multipleEditorGroups"
   },
-   {
+  {
     "key": "enter",
-    "when": "explorerViewletVisible && filesExplorerFocus",
+    "when": "listFocus && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !explorerResourceReadonly && !inputFocus",
     "command": "extension.multiCommand.execute",
     "args": {
       "sequence": ["list.select", "workbench.action.toggleSidebarVisibility"]
