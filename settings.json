@@ -2,6 +2,7 @@
   "update.mode": "manual",
   "workbench.colorTheme": "One Dark Pro Darker",
   "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "workbench.editor.closeEmptyGroups": false
   "editor.cursorSurroundingLines": 22,
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.iconTheme": "material-icon-theme",
