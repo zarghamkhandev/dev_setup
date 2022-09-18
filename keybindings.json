@@ -196,11 +196,6 @@
     "command": "-workbench.action.findInFiles"
   },
   {
-    "key": "escape",
-    "command": "workbench.action.blur",
-    "when": "activeViewlet == 'workbench.view.scm' || activeViewlet == 'workbench.view.search'"
-  },
-  {
     "key": "ctrl+h",
     "command": "workbench.action.navigateLeft",
     "when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible && !isInDiffEditor"
