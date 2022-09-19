@@ -2,7 +2,7 @@
   "update.mode": "manual",
   "workbench.colorTheme": "One Dark Pro Darker",
   "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
-  "workbench.editor.closeEmptyGroups": false
+  "workbench.editor.closeEmptyGroups": false,
   "editor.cursorSurroundingLines": 22,
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.iconTheme": "material-icon-theme",
@@ -42,7 +42,7 @@
       "key": "q",
       "name": "Close window",
       "type": "command",
-	     "command": "workbench.action.closeEditorsInGroup"
+      "command": "workbench.action.closeEditorsInGroup"
     },
     {
       "key": "s",
@@ -88,7 +88,27 @@
         }
       ]
     },
-  {
+    {
+      "key": "x",
+      "name": "Go to errors",
+      "bindings": [
+        {
+          "key": "k",
+          "name": "Previous error",
+          "type": "comand",
+          "command": "editor.action.marker.previous",
+          "when": "editorTextFocus && !textCompareEditorActive"
+        },
+        {
+          "key": "j",
+          "name": "Next error",
+          "type": "comand",
+          "command": "editor.action.marker.next",
+          "when": "editorTextFocus && !textCompareEditorActive"
+        }
+      ]
+    },
+    {
       "key": "g",
       "name": "Git",
       "bindings": [
@@ -130,21 +150,8 @@
     {
       "key": "e",
       "name": "Show tree/explorer view",
-      "type": "conditional",
-      "bindings": [
-        {
-          "key": "",
-          "name": "default",
-          "type": "command",
-          "command": "workbench.view.explorer"
-        },
-        {
-          "key": "when:visible",
-          "name": "Hide explorer",
-          "type": "command",
-          "command": "workbench.action.toggleSidebarVisibility"
-        }
-      ]
+      "type": "command",
+      "command": "workbench.view.explorer"
     },
 
     // default commands
@@ -549,7 +556,7 @@
           "type": "command",
           "command": "workbench.action.toggleEditorWidths"
         },
-      {
+        {
           "key": "m",
           "name": "Move Editor in Groups",
           "type": "bindings",
@@ -612,6 +619,7 @@
   "editor.scrollbar.vertical": "hidden",
   "editor.cursorBlinking": "solid",
   "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "terminal.integrated.tabs.enabled": false
 }
 
