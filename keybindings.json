@@ -127,7 +127,7 @@
   {
     "key": "shift+k",
     "command": "editor.action.showHover",
-    "when": "editorTextFocus"
+    "when": "editorTextFocus && neovim.mode != 'insert'"
   },
   {
     "key": "ctrl+k ctrl+i",
@@ -147,12 +147,12 @@
   {
     "key": "tab",
     "command": "workbench.action.nextEditorInGroup",
-    "when": "neovim.mode != 'insert'"
+    "when": "neovim.mode != 'insert' && !terminalFocus"
   },
   {
     "key": "shift+tab",
     "command": "workbench.action.previousEditorInGroup",
-    "when": "neovim.mode != 'insert'"
+    "when": "neovim.mode != 'insert' && !terminalFocus"
   },
   {
     "key": "space",
