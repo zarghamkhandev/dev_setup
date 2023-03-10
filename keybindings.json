@@ -147,7 +147,7 @@
   {
     "key": "tab",
     "command": "workbench.action.nextEditorInGroup",
-    "when": "neovim.mode != 'insert' && !terminalFocus"
+    "when": "neovim.mode != 'insert' && !terminalFocus && !inputFocus"
   },
   {
     "key": "shift+tab",
@@ -186,10 +186,6 @@
       "when": "visible"
     },
     "when": "whichkeyVisible && activeViewlet == 'workbench.view.explorer'"
-  },
-  {
-    "key": "cmd+p",
-    "command": "-workbench.action.quickOpen"
   },
   {
     "key": "shift+cmd+f",
@@ -247,10 +243,6 @@
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "cmd+s",
-    "command": "-workbench.action.files.save"
-  },
-  {
     "key": "cmd+w",
     "command": "-workbench.action.closeActiveEditor"
   },
@@ -274,4 +266,3 @@
     "when": "activeEditorGroupEmpty && multipleEditorGroups"
   }
 ]
-
