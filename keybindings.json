@@ -147,7 +147,7 @@
   {
     "key": "tab",
     "command": "workbench.action.nextEditorInGroup",
-    "when": "neovim.mode != 'insert' && !terminalFocus && !inputFocus"
+    "when": "neovim.mode != 'insert' && !terminalFocus"
   },
   {
     "key": "shift+tab",
