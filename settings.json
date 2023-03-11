@@ -2,8 +2,8 @@
   "update.mode": "manual",
   "workbench.colorTheme": "One Dark Pro Darker",
   "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
-  "workbench.editor.closeEmptyGroups": false,
-  "editor.cursorSurroundingLines": 22,
+  "workbench.editor.closeEmptyGroups": true,
+  "editor.cursorSurroundingLines": 999,
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
@@ -29,9 +29,8 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.lineNumbers": "relative",
   "whichkey.sortOrder": "alphabetically",
-  "whichkey.delay": 200,
+  "whichkey.delay": 0,
   "whichkey.bindings": [
     {
       "key": ";",
@@ -617,4 +616,3 @@
   "terminal.integrated.tabs.enabled": false,
   "extensions.ignoreRecommendations": true
 }
-
