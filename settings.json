@@ -614,5 +614,6 @@
   "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
   "editor.minimap.enabled": false,
   "terminal.integrated.tabs.enabled": false,
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "window.zoomLevel": 1
 }
